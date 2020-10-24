@@ -6,6 +6,6 @@
 * @param {Object} res Cloud Function response context.
 * More info: https://expressjs.com/en/api.html#res
 */
-exports.trainingCICD = (req, res) => {
-  res.send(`Hello ${req.body.name || 'World'}!`);
+exports.traningCICD = (req, res) => {
+  res.send({ yourName: req.body.name });
 };
